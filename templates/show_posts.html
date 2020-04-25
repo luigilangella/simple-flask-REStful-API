@@ -1,0 +1,7 @@
+<ul class="posts">
+    {% for post in posts %}
+    <li>
+        <h2>{{post.title}}</h2>{{post.text|safe}} {% else %}
+    </li>
+    Sorry, no post matches your request. {% endfor %}
+</ul>
